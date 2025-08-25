@@ -1,0 +1,246 @@
+2025-08-24T14:47:32.972+07:00  INFO 86911 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : Starting GymManagementApplication using Java 17.0.12 with PID 86911 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-24T14:47:32.975+07:00  INFO 86911 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-24T14:47:33.038+07:00  INFO 86911 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-24T14:47:33.039+07:00  INFO 86911 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-24T14:47:34.161+07:00  INFO 86911 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-24T14:47:34.185+07:00  INFO 86911 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2025-08-24T14:47:34.645+07:00  INFO 86911 --- [gym-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-24T14:47:34.662+07:00  INFO 86911 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-24T14:47:34.663+07:00  INFO 86911 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-24T14:47:34.754+07:00  INFO 86911 --- [gym-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-24T14:47:34.755+07:00  INFO 86911 --- [gym-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1715 ms
+2025-08-24T14:47:35.053+07:00  INFO 86911 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-24T14:47:35.197+07:00  INFO 86911 --- [gym-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e92a0ae
+2025-08-24T14:47:35.199+07:00  INFO 86911 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-24T14:47:35.209+07:00  WARN 86911 --- [gym-management] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsupported Database: MySQL 8.0
+2025-08-24T14:47:35.209+07:00  INFO 86911 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-24T14:47:35.216+07:00  INFO 86911 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-24T14:47:35.220+07:00  INFO 86911 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-08-24T14:47:35.240+07:00  INFO 86911 --- [gym-management] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-24T14:47:35.264+07:00 ERROR 86911 --- [gym-management] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'flywayInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.8.jar:6.2.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.3.jar:3.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.3.jar:3.5.3]
+	at com.yourcompany.gymmanagement.GymManagementApplication.main(GymManagementApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.3.jar:3.5.3]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unsupported Database: MySQL 8.0
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 15 common frames omitted
+Caused by: org.flywaydb.core.api.FlywayException: Unsupported Database: MySQL 8.0
+	at org.flywaydb.core.internal.database.DatabaseTypeRegister.lambda$getDatabaseTypeForConnection$7(DatabaseTypeRegister.java:134) ~[flyway-core-11.7.2.jar:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at org.flywaydb.core.internal.database.DatabaseTypeRegister.getDatabaseTypeForConnection(DatabaseTypeRegister.java:134) ~[flyway-core-11.7.2.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:77) ~[flyway-core-11.7.2.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:136) ~[flyway-core-11.7.2.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:188) ~[flyway-core-11.7.2.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.5.3.jar:3.5.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.8.jar:6.2.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.8.jar:6.2.8]
+	... 22 common frames omitted
+
+2025-08-24T14:50:29.638+07:00  INFO 89224 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : Starting GymManagementApplication using Java 24.0.1 with PID 89224 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-24T14:50:29.640+07:00  INFO 89224 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-24T14:50:29.678+07:00  INFO 89224 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-24T14:50:29.678+07:00  INFO 89224 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-24T14:50:30.632+07:00  INFO 89224 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-24T14:50:30.659+07:00  INFO 89224 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2025-08-24T14:50:31.229+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-24T14:50:31.248+07:00  INFO 89224 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-24T14:50:31.249+07:00  INFO 89224 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-24T14:50:31.286+07:00  INFO 89224 --- [gym-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-24T14:50:31.286+07:00  INFO 89224 --- [gym-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1608 ms
+2025-08-24T14:50:31.547+07:00  INFO 89224 --- [gym-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-24T14:50:31.610+07:00  INFO 89224 --- [gym-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-24T14:50:31.643+07:00  INFO 89224 --- [gym-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-24T14:50:31.920+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-24T14:50:31.948+07:00  INFO 89224 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-24T14:50:32.139+07:00  INFO 89224 --- [gym-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@685fc49
+2025-08-24T14:50:32.141+07:00  INFO 89224 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-24T14:50:32.205+07:00  WARN 89224 --- [gym-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-24T14:50:32.221+07:00  INFO 89224 --- [gym-management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-24T14:50:33.154+07:00  INFO 89224 --- [gym-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-24T14:50:33.212+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table class_schedules 
+       modify column description longtext
+2025-08-24T14:50:33.254+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table class_schedules 
+       add column trainer_name varchar(100) not null
+2025-08-24T14:50:33.266+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table equipment 
+       modify column description longtext
+2025-08-24T14:50:33.285+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table equipment 
+       add column last_maintenance_date date
+2025-08-24T14:50:33.293+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table equipment 
+       modify column notes longtext
+2025-08-24T14:50:33.309+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table equipment 
+       modify column status enum ('AVAILABLE','IN_USE','MAINTENANCE','RETIRED')
+2025-08-24T14:50:33.315+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-08-24T14:50:33.345+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       modify column notes longtext
+2025-08-24T14:50:33.371+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       modify column status enum ('ACTIVE','INACTIVE','SUSPENDED')
+2025-08-24T14:50:33.397+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       add column membership_plan_id bigint
+2025-08-24T14:50:33.412+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table membership_plans 
+       modify column description longtext
+2025-08-24T14:50:33.431+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table payments 
+       modify column notes longtext
+2025-08-24T14:50:33.449+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table registrations 
+       modify column attendance_status enum ('ABSENT','PENDING','PRESENT')
+2025-08-24T14:50:33.465+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table registrations 
+       modify column notes longtext
+2025-08-24T14:50:33.482+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       add column is_active bit
+2025-08-24T14:50:33.493+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       modify column role enum ('ADMIN','MEMBER','STAFF') not null
+2025-08-24T14:50:33.515+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       add column user_name varchar(50) not null
+2025-08-24T14:50:33.530+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table registrations 
+       drop index UKesmjl290254gcmcj8vfo079c1
+2025-08-24T14:50:33.888+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table registrations 
+       add constraint UKesmjl290254gcmcj8vfo079c1 unique (member_id, class_schedule_id)
+2025-08-24T14:50:33.908+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       drop index UKk8d0f2n7n88w1a16yhua64onx
+2025-08-24T14:50:33.909+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       add constraint UKk8d0f2n7n88w1a16yhua64onx unique (user_name)
+2025-08-24T14:50:33.920+07:00 DEBUG 89224 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       add constraint fk_member_plan 
+       foreign key (membership_plan_id) 
+       references membership_plans (id)
+2025-08-24T14:50:33.976+07:00  INFO 89224 --- [gym-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-24T14:50:34.119+07:00  WARN 89224 --- [gym-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-24T14:50:34.615+07:00  WARN 89224 --- [gym-management] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3a190d2d-4190-43e8-8e13-03fd7bf09d12
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-24T14:50:34.624+07:00  INFO 89224 --- [gym-management] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-24T14:50:34.720+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-24T14:50:34.771+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/gym_management?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC'
+2025-08-24T14:50:34.827+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-24T14:50:34.898+07:00  INFO 89224 --- [gym-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-24T14:50:34.913+07:00  INFO 89224 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : Started GymManagementApplication in 5.711 seconds (process running for 6.123)
+2025-08-24T14:52:13.938+07:00  INFO 89224 --- [gym-management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-24T14:52:13.939+07:00  INFO 89224 --- [gym-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-24T14:52:13.943+07:00  INFO 89224 --- [gym-management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-24T14:56:11.202+07:00  INFO 89224 --- [gym-management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-24T14:56:11.206+07:00  INFO 89224 --- [gym-management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-24T14:56:11.212+07:00  INFO 89224 --- [gym-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-24T14:56:11.216+07:00  INFO 89224 --- [gym-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-24T14:56:11.221+07:00  INFO 89224 --- [gym-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-24T14:56:21.855+07:00  INFO 89870 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : Starting GymManagementApplication using Java 17.0.12 with PID 89870 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-24T14:56:21.860+07:00  INFO 89870 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-08-24T14:56:21.922+07:00  INFO 89870 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-24T14:56:21.923+07:00  INFO 89870 --- [gym-management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-24T14:56:23.483+07:00  INFO 89870 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-24T14:56:23.527+07:00  INFO 89870 --- [gym-management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+2025-08-24T14:56:24.120+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-24T14:56:24.134+07:00  INFO 89870 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-24T14:56:24.134+07:00  INFO 89870 --- [gym-management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-24T14:56:24.183+07:00  INFO 89870 --- [gym-management] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-24T14:56:24.183+07:00  INFO 89870 --- [gym-management] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2259 ms
+2025-08-24T14:56:24.494+07:00  INFO 89870 --- [gym-management] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-24T14:56:24.563+07:00  INFO 89870 --- [gym-management] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-24T14:56:24.605+07:00  INFO 89870 --- [gym-management] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-24T14:56:24.917+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-24T14:56:24.954+07:00  INFO 89870 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-24T14:56:25.147+07:00  INFO 89870 --- [gym-management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dd75402
+2025-08-24T14:56:25.150+07:00  INFO 89870 --- [gym-management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-24T14:56:25.210+07:00  WARN 89870 --- [gym-management] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-24T14:56:25.233+07:00  INFO 89870 --- [gym-management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-24T14:56:26.322+07:00  INFO 89870 --- [gym-management] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-24T14:56:26.376+07:00 DEBUG 89870 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table equipment 
+       modify column status enum ('AVAILABLE','IN_USE','MAINTENANCE','RETIRED')
+2025-08-24T14:56:26.387+07:00 DEBUG 89870 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       modify column gender enum ('FEMALE','MALE','OTHER')
+2025-08-24T14:56:26.420+07:00 DEBUG 89870 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table members 
+       modify column status enum ('ACTIVE','INACTIVE','SUSPENDED')
+2025-08-24T14:56:26.450+07:00 DEBUG 89870 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table registrations 
+       modify column attendance_status enum ('ABSENT','PENDING','PRESENT')
+2025-08-24T14:56:26.455+07:00 DEBUG 89870 --- [gym-management] [restartedMain] org.hibernate.SQL                        : 
+    alter table users 
+       modify column role enum ('ADMIN','MEMBER','STAFF') not null
+2025-08-24T14:56:26.506+07:00  INFO 89870 --- [gym-management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-24T14:56:26.632+07:00  WARN 89870 --- [gym-management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-24T14:56:27.333+07:00  WARN 89870 --- [gym-management] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dc5caf45-a2bf-487b-8c55-84c0451d088c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-08-24T14:56:27.344+07:00  INFO 89870 --- [gym-management] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-08-24T14:56:27.476+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-24T14:56:27.536+07:00  INFO 89870 --- [gym-management] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-24T14:56:27.537+07:00  INFO 89870 --- [gym-management] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-24T14:56:27.537+07:00  INFO 89870 --- [gym-management] [RMI TCP Connection(2)-127.0.0.1] o.s.b.f.s.DefaultListableBeanFactory     : Obtaining singleton bean 'multipartResolver' in thread "RMI TCP Connection(2)-127.0.0.1" while other thread holds singleton lock for other beans [org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension]
+2025-08-24T14:56:27.540+07:00  INFO 89870 --- [gym-management] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-24T14:56:27.551+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/gym_management?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC'
+2025-08-24T14:56:27.638+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-24T14:56:27.764+07:00  INFO 89870 --- [gym-management] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-24T14:56:27.772+07:00  INFO 89870 --- [gym-management] [restartedMain] c.y.g.GymManagementApplication           : Started GymManagementApplication in 6.373 seconds (process running for 7.044)
+2025-08-24T14:56:54.525+07:00  INFO 89870 --- [gym-management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-24T14:56:54.530+07:00  INFO 89870 --- [gym-management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-24T14:56:54.539+07:00  INFO 89870 --- [gym-management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-24T14:56:54.544+07:00  INFO 89870 --- [gym-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-24T14:56:54.553+07:00  INFO 89870 --- [gym-management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

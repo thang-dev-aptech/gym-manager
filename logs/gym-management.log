@@ -1,0 +1,44 @@
+2025-08-25 08:49:23.662 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 13937 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:49:23.664 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:49:23.665 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:49:27.735 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 4.571 seconds (process running for 4.878)
+2025-08-25 08:51:24.299 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 13937 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:51:24.300 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:51:24.300 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:51:25.292 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 1.034 seconds (process running for 122.441)
+2025-08-25 08:51:48.066 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 13937 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:51:48.067 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:51:48.067 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:51:49.004 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.996 seconds (process running for 146.154)
+2025-08-25 08:53:16.264 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 13937 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:53:16.264 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:53:16.264 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:53:17.084 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.84 seconds (process running for 234.236)
+2025-08-25 08:53:45.811 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 13937 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:53:45.811 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:53:45.811 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:53:46.604 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.813 seconds (process running for 263.757)
+2025-08-25 08:54:16.083 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 14270 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:54:16.095 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:54:16.096 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:54:19.878 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 4.216 seconds (process running for 4.509)
+2025-08-25 08:55:39.086 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 14270 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:55:39.086 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:55:39.086 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:55:39.965 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.906 seconds (process running for 84.598)
+2025-08-25 08:55:48.518 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 14270 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:55:48.518 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:55:48.518 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:55:49.220 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.725 seconds (process running for 93.852)
+2025-08-25 08:57:12.505 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 24.0.1 with PID 14270 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 08:57:12.506 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 08:57:12.506 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 08:57:13.331 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 0.85 seconds (process running for 177.966)
+2025-08-25 09:01:08.189 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 17.0.12 with PID 15340 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 09:01:08.190 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 09:01:08.191 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 09:01:13.152 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 5.441 seconds (process running for 6.062)
+2025-08-25 09:01:45.913 INFO  c.y.g.GymManagementApplication - Starting GymManagementApplication using Java 17.0.12 with PID 15340 (/Users/metacom/Documents/gym-management/target/classes started by metacom in /Users/metacom/Documents/gym-management)
+2025-08-25 09:01:45.913 DEBUG c.y.g.GymManagementApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-25 09:01:45.914 INFO  c.y.g.GymManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 09:01:47.055 INFO  c.y.g.GymManagementApplication - Started GymManagementApplication in 1.197 seconds (process running for 39.966)
